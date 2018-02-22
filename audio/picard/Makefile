@@ -35,9 +35,9 @@ ACOUSTID_RUN_DEPENDS=	fpcalc:audio/chromaprint
 PLUGINS_DESC=		Install various plugins to extend functionality
 PLUGINS_RUN_DEPENDS=	picard-plugins>0:audio/picard-plugins
 
-#post-patch:
-#	@${REINPLACE_CMD} -e 's|distutils\.command\.install |setuptools\.command\.install |' \
-#		${WRKSRC}/setup.py
+post-patch:
+	@${REINPLACE_CMD} -e 's|distutils\.command\.install |setuptools\.command\.install |' \
+		${WRKSRC}/setup.py
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/picard/util/_astrcmp.so
