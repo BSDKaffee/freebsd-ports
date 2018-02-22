@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	libcdio
-PORTVERSION=	0.94
+PORTVERSION=	2.0.0
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU
 
@@ -26,8 +26,6 @@ LIBS+=		${ICONV_LIB}
 INFO=		libcdio
 CPE_VENDOR=	gnu
 INSTALL_TARGET=	install-strip
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|freebsd10\.\*|freebsd*|g' ${WRKSRC}/configure
+TEST_TARGET=	check
 
 .include <bsd.port.mk>
