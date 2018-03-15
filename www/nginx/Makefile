@@ -3,7 +3,7 @@
 
 PORTNAME=	nginx
 PORTVERSION=	1.12.2
-PORTREVISION?=	8
+PORTREVISION?=	10
 PORTEPOCH=	2
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/
@@ -701,7 +701,8 @@ CONFIGURE_ARGS+=--add-dynamic-module=${WRKSRC_nginx_tarantool}
 .else
 CONFIGURE_ARGS+=--add-module=${WRKSRC_nginx_tarantool}
 .endif
-EXTRA_PATCHES+= ${PATCHDIR}/extra-patch-ngx_http_tarantool-config
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-ngx_http_tarantool-config \
+		${PATCHDIR}/extra-patch-ngx_http_tarantool-src-tp_transcode.c
 .endif
 
 .if ${PORT_OPTIONS:MHTTP_SECURE_LINK}
@@ -893,9 +894,8 @@ LIB_DEPENDS+=	libapr-1.so:devel/apr1 \
 		libluajit-5.1.so:lang/luajit \
 		libpcre.so:devel/pcre \
 		libyajl.so:devel/yajl
-USE_APACHE=	22+
 USE_GNOME+=	libxml2
-USES+=		pkgconfig shebangfix
+USES+=		apache:2.2+ pkgconfig shebangfix
 MASTER_SITES+=	http://www.modsecurity.org/tarball/${NGINX_MODSECURITY_VERSION:S/RC/rc/}/:modsecurity
 DISTFILES+=	modsecurity-${NGINX_MODSECURITY_VERSION}.tar.gz:modsecurity
 CONFIGURE_ARGS+=--add-module=${WRKDIR}/modsecurity-${NGINX_MODSECURITY_VERSION}/nginx/modsecurity
@@ -927,7 +927,7 @@ CONFIGURE_ARGS+=--without-http_rewrite_module \
 .endif
 
 .if ${PORT_OPTIONS:MPASSENGER}
-PASSENGER_VERSION=	5.1.12
+PASSENGER_VERSION=	5.2.1
 MASTER_SITES+=	http://s3.amazonaws.com/phusion-passenger/releases/:passenger
 DISTFILES+=	passenger-${PASSENGER_VERSION}.tar.gz:passenger
 .if ${PORT_OPTIONS:MDSO}
@@ -1135,7 +1135,7 @@ CONFIGURE_ARGS+=--add-module=${WRKSRC_arrayvar}
 .endif
 
 .if ${PORT_OPTIONS:MBROTLI}
-NGINX_BROTLI_VERSION=	 47550a2
+NGINX_BROTLI_VERSION=	 8cd9dd5
 LIB_DEPENDS+=	libbrotlicommon.so:archivers/brotli
 GH_ACCOUNT+=	eustas:brotli
 GH_PROJECT+=	ngx_brotli:brotli

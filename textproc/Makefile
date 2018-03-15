@@ -18,6 +18,7 @@
     SUBDIR += R-cran-rmarkdown
     SUBDIR += R-cran-stringi
     SUBDIR += R-cran-stringr
+    SUBDIR += R-cran-utf8
     SUBDIR += R-cran-xml2
     SUBDIR += R-cran-xtable
     SUBDIR += R-cran-yaml
@@ -387,6 +388,7 @@
     SUBDIR += kibana5
     SUBDIR += kibana5-search-guard
     SUBDIR += kibana5-x-pack
+    SUBDIR += kibana6
     SUBDIR += kiss-templates
     SUBDIR += kmfl-european-latin
     SUBDIR += kmfl-khmer
@@ -398,7 +400,7 @@
     SUBDIR += kmfl-varamozhi-malayalam
     SUBDIR += kmflcomp
     SUBDIR += kn-aspell
-    SUBDIR += kompare
+    SUBDIR += kompare-kde4
     SUBDIR += kreport
     SUBDIR += ku-aspell
     SUBDIR += ky-aspell
@@ -425,7 +427,7 @@
     SUBDIR += libguess
     SUBDIR += libkmfl
     SUBDIR += libkolabxml
-    SUBDIR += libkomparediff2
+    SUBDIR += libkomparediff2-kde4
     SUBDIR += liblingoteach
     SUBDIR += liblrdf
     SUBDIR += libmrss
@@ -1276,6 +1278,7 @@
     SUBDIR += py-asv
     SUBDIR += py-autopep8
     SUBDIR += py-awesome-slugify
+    SUBDIR += py-bibtexparser
     SUBDIR += py-bugzillatools
     SUBDIR += py-chardet
     SUBDIR += py-cjkwrap
@@ -1299,6 +1302,7 @@
     SUBDIR += py-et_xmlfile
     SUBDIR += py-excelerator
     SUBDIR += py-feedparser
+    SUBDIR += py-gambit-elasticsearch
     SUBDIR += py-genshi
     SUBDIR += py-guess-language
     SUBDIR += py-hexdump
@@ -1336,6 +1340,7 @@
     SUBDIR += py-pyes
     SUBDIR += py-pygments
     SUBDIR += py-pygtail
+    SUBDIR += py-pyhamcrest
     SUBDIR += py-pyhwp
     SUBDIR += py-pyphen
     SUBDIR += py-pyscss
@@ -1473,11 +1478,13 @@
     SUBDIR += rubygem-babosa
     SUBDIR += rubygem-case_transform
     SUBDIR += rubygem-charlock_holmes
+    SUBDIR += rubygem-chewy
     SUBDIR += rubygem-citrus
     SUBDIR += rubygem-cld3
     SUBDIR += rubygem-coderay
     SUBDIR += rubygem-colorator
     SUBDIR += rubygem-colored
+    SUBDIR += rubygem-commonmarker
     SUBDIR += rubygem-compass
     SUBDIR += rubygem-compass-core
     SUBDIR += rubygem-compass-import-once
@@ -1491,6 +1498,7 @@
     SUBDIR += rubygem-docdiff
     SUBDIR += rubygem-elasticsearch
     SUBDIR += rubygem-elasticsearch-api
+    SUBDIR += rubygem-elasticsearch-dsl
     SUBDIR += rubygem-elasticsearch-transport
     SUBDIR += rubygem-emot
     SUBDIR += rubygem-escape_utils
