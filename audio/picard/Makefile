@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	picard
-PORTVERSION=	2.0.0
+DISTVERSION=	2.0.0.dev4
 CATEGORIES=	audio python
 #MASTER_SITES=	http://ftp.musicbrainz.org/pub/musicbrainz/picard/ \
 #		ftp://ftp.musicbrainz.org/pub/musicbrainz/picard/ \
@@ -18,12 +18,13 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}discid>=0.5.2:audio/py-discid@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mutagen>=1.23:audio/py-mutagen@${FLAVOR}
 
 USES=		gettext pyqt:5 python:3.5+ desktop-file-utils
+USE_LOCALE=	en_US.UTF-8
 USE_PYQT=	core_run gui_run network_run widgets_run sip
 USE_PYTHON=	autoplist distutils
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	metabrainz
-GH_TAGNAME=	f73dbe1
+GH_TAGNAME=	9244a83
 
 #WRKSRC=		${WRKDIR}/${PORTNAME}-release-${PORTVERSION}
 
