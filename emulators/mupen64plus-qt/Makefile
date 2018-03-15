@@ -2,6 +2,7 @@
 
 PORTNAME=	mupen64plus-qt
 PORTVERSION=	1.10
+PORTREVISION=	1
 CATEGORIES=	emulators
 
 MAINTAINER=	maintainer@hasting.email
@@ -11,9 +12,9 @@ LICENSE=	BSD3CLAUSE
 
 BROKEN=		wrong dependencies, mupen64plus executable is not provided by emulators/mupen64plus
 DEPRECATED=	Broken for more than 6 months
-EXPIRATION_DATE=	2018-03-19
+EXPIRATION_DATE=	2018-05-19
 
-LIB_DEPENDS=	libquazip.so:archivers/quazip
+LIB_DEPENDS=	libquazip.so:archivers/quazip@qt4
 RUN_DEPENDS=	mupen64plus:emulators/mupen64plus
 
 USES=		qmake
