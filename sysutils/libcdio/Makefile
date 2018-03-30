@@ -13,11 +13,14 @@ LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libcddb.so:audio/libcddb
+TEST_DEPENDS=	genisoimage:sysutils/genisoimage
 
-USES=		cpe gmake iconv localbase libtool \
-		ncurses pathfix perl5 pkgconfig
+USES=		cpe gmake iconv libtool localbase \
+		ncurses pathfix perl5 pkgconfig shebangfix
 USE_PERL5=	build
 USE_LDCONFIG=	yes
+SHEBANG_FILES=	test/check_bad_iso.sh
+bash_CMD=	${SH}
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	${ICONV_CONFIGURE_ARG}
