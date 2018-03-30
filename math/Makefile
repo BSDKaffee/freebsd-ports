@@ -110,6 +110,7 @@
     SUBDIR += analitza-kde4
     SUBDIR += ann
     SUBDIR += apc
+    SUBDIR += arb
     SUBDIR += aribas
     SUBDIR += armadillo
     SUBDIR += arpack
@@ -183,12 +184,14 @@
     SUBDIR += fftw3-quad
     SUBDIR += fityk
     SUBDIR += flann
+    SUBDIR += flint2
     SUBDIR += form
     SUBDIR += fpc-fftw
     SUBDIR += fpc-gmp
     SUBDIR += fpc-numlib
     SUBDIR += freemat
     SUBDIR += fxt
+    SUBDIR += g2o
     SUBDIR += galculator
     SUBDIR += gambit
     SUBDIR += gap
@@ -620,6 +623,7 @@
     SUBDIR += pspp
     SUBDIR += pure-mpfr
     SUBDIR += pure-rational
+    SUBDIR += py-Diofant
     SUBDIR += py-PyWavelets
     SUBDIR += py-altgraph
     SUBDIR += py-apgl
@@ -631,6 +635,7 @@
     SUBDIR += py-cdecimal
     SUBDIR += py-colormath
     SUBDIR += py-cryptominisat
+    SUBDIR += py-cvxopt
     SUBDIR += py-fastcluster
     SUBDIR += py-ffc
     SUBDIR += py-fiat
@@ -665,6 +670,7 @@
     SUBDIR += py-pygsl
     SUBDIR += py-pyhull
     SUBDIR += py-pymc
+    SUBDIR += py-pymc3
     SUBDIR += py-pysparse
     SUBDIR += py-pyvtk
     SUBDIR += py-roman
@@ -672,10 +678,12 @@
     SUBDIR += py-seaborn
     SUBDIR += py-statsmodels
     SUBDIR += py-svgmath
+    SUBDIR += py-symcxx
     SUBDIR += py-symeig
     SUBDIR += py-sympy
     SUBDIR += py-theano
     SUBDIR += py-ufl
+    SUBDIR += py-uncertainties
     SUBDIR += py-viper
     SUBDIR += py-yt
     SUBDIR += qalculate

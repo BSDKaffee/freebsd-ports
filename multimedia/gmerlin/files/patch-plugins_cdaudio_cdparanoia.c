@@ -1,4 +1,4 @@
-Fix build with sysutils/libcdio 2.x
+Fix build with sysutils/libcdio >= 0.90
 
 --- plugins/cdaudio/cdparanoia.c.orig	2018-02-22 06:24:11 UTC
 +++ plugins/cdaudio/cdparanoia.c

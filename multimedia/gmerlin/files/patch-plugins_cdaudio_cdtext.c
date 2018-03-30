@@ -1,4 +1,4 @@
-Fix build with sysutils/libcdio 2.x
+Fix build with sysutils/libcdio >= 0.90
 
 --- plugins/cdaudio/cdtext.c.orig	2012-06-08 11:50:33 UTC
 +++ plugins/cdaudio/cdtext.c

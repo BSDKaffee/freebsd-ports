@@ -28,6 +28,7 @@
     SUBDIR += asterisk-chan_sccp
     SUBDIR += asterisk-g72x
     SUBDIR += asterisk13
+    SUBDIR += asterisk15
     SUBDIR += avahi
     SUBDIR += avahi-app
     SUBDIR += avahi-autoipd
@@ -148,7 +149,6 @@
     SUBDIR += fpc-ldap
     SUBDIR += fpc-pcap
     SUBDIR += fping
-    SUBDIR += freebsd-tftp
     SUBDIR += freebsd-uucp
     SUBDIR += freediameter
     SUBDIR += freenet6
@@ -502,6 +502,7 @@
     SUBDIR += ntpa
     SUBDIR += ntraceroute
     SUBDIR += nusoap
+    SUBDIR += nuster
     SUBDIR += nxproxy
     SUBDIR += nyancat
     SUBDIR += nylon
@@ -1214,6 +1215,8 @@
     SUBDIR += rubygem-geoip
     SUBDIR += rubygem-gitaly
     SUBDIR += rubygem-gitaly-proto
+    SUBDIR += rubygem-gitaly-proto083
+    SUBDIR += rubygem-gitaly-proto084
     SUBDIR += rubygem-gitlab_omniauth-ldap
     SUBDIR += rubygem-gitlab_omniauth-ldap1
     SUBDIR += rubygem-grpc
@@ -1287,11 +1290,10 @@
     SUBDIR += rubygem-xmlrpc
     SUBDIR += rude
     SUBDIR += s3ql
-#    SUBDIR += samba4-devel
-    SUBDIR += samba44
     SUBDIR += samba45
     SUBDIR += samba46
     SUBDIR += samba47
+    SUBDIR += samba48
     SUBDIR += samplicator
     SUBDIR += sbd
     SUBDIR += sbm
