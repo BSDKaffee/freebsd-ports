@@ -671,7 +671,6 @@
     SUBDIR += p5-Net-Ident
     SUBDIR += p5-Net-Ifconfig-Wrapper
     SUBDIR += p5-Net-Interface
-    SUBDIR += p5-Net-Jaiku
     SUBDIR += p5-Net-Jifty
     SUBDIR += p5-Net-LDAP-AutoDNs
     SUBDIR += p5-Net-LDAP-AutoServer
@@ -869,7 +868,6 @@
     SUBDIR += packetdrill
     SUBDIR += packter-agent
     SUBDIR += panoptis
-    SUBDIR += paris-traceroute
     SUBDIR += passlogd
     SUBDIR += pathneck
     SUBDIR += pbnc
@@ -931,6 +929,7 @@
     SUBDIR += pecl-oauth
     SUBDIR += pecl-oauth2
     SUBDIR += pecl-radius
+    SUBDIR += pecl-rdkafka
     SUBDIR += pecl-smbclient
     SUBDIR += pecl-yaz
     SUBDIR += pecl-yp

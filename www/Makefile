@@ -5,6 +5,7 @@
 
     SUBDIR += R-cran-RgoogleMaps
     SUBDIR += R-cran-Rook
+    SUBDIR += R-cran-crosstalk
     SUBDIR += R-cran-downloader
     SUBDIR += R-cran-htmlwidgets
     SUBDIR += R-cran-httpuv
@@ -397,6 +398,7 @@
     SUBDIR += midori
     SUBDIR += mimetex
     SUBDIR += mini_httpd
+    SUBDIR += miniflux
     SUBDIR += miniminiweb
     SUBDIR += minio
     SUBDIR += minio-client
@@ -552,7 +554,6 @@
     SUBDIR += npm-node4
     SUBDIR += npm-node6
     SUBDIR += npm-node8
-    SUBDIR += npm4
     SUBDIR += nspluginwrapper
     SUBDIR += nuvolaplayer-8tracks
     SUBDIR += nuvolaplayer-all-services
@@ -1570,7 +1571,6 @@
     SUBDIR += py-django-crispy-forms
     SUBDIR += py-django-datetime-widget
     SUBDIR += py-django-debug-toolbar
-    SUBDIR += py-django-devel
     SUBDIR += py-django-dpaste
     SUBDIR += py-django-evolution
     SUBDIR += py-django-extensions

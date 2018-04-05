@@ -458,6 +458,7 @@
     SUBDIR += hal-info
     SUBDIR += hardlink
     SUBDIR += hare
+    SUBDIR += hared
     SUBDIR += hatop
     SUBDIR += hdrecover
     SUBDIR += healthd
@@ -588,6 +589,7 @@
     SUBDIR += lmon
     SUBDIR += lnav
     SUBDIR += lockfile-progs
+    SUBDIR += log-courier
     SUBDIR += log_analysis
     SUBDIR += logrotate
     SUBDIR += logstalgia
